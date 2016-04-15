@@ -1,0 +1,29 @@
+<!-- notice 公告栏 -->
+<div class="notice">
+    <b>
+        <a style="background:none; padding-right:20px;" href="{:U('/Home/Article/index/cid/1')}">通知公告</a>
+    </b>
+    <p class="noticeTxt">
+         <a href="{:U('/Home/Article/index/newsid/'.$notice_top['id'])}" title="{$notice_top['info']}">
+             {$notice_top['title']|mb_strimwidth=###,0,46,'..','utf-8'}
+         </a>
+       <!-- <a href="{$public_notice_top['uri']}" title="{$public_notice_top['title']}">{$public_notice_top['name']}</a> -->
+    </p>
+    <div style="position:relative; height:19px; overflow:hidden; padding-top:24px;">
+        <div id="scrollDiv" style="position:relative; height:19px; overflow:hidden;">
+            <ul>
+                <volist name="notice_list" id="vo">
+                    <li><a href="{:U('/Home/Article/index/newsid/'.$vo['id'])}" title="{$vo['info']}">
+                        {$vo['title']|mb_strimwidth=###,0,44,'..','utf-8'}
+                    </a></li>
+                </volist>
+                <!--
+                <volist name="public_notice_list" id="vo">
+                    <li><a href="{$vo[uri]}" title="{$vo['title']}">{$vo['name']}</a></li>
+                </volist>
+                -->
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- notice 公告栏!!-->

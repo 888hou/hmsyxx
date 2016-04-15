@@ -1,0 +1,33 @@
+
+ul,li{margin:0;padding:0;}
+
+
+.inkPhoBox { width: 480px;height:320px; margin:15px auto 0px; }
+.inkPhoBox #prev{ background: url(../images/next.png)/*tpa=http://www.rdfx.net/images/next.png*/ no-repeat; height: 68px; width: 14px; position: absolute; z-index: 99; left: 0px; top: 0px; cursor: pointer; }
+.inkPhoBox #next{ background: url(../images/prev.png)/*tpa=http://www.rdfx.net/images/prev.png*/ no-repeat; height: 68px; width: 14px; position: absolute; z-index: 99; top: 0px; right: 0px; cursor: pointer; }
+.inkPhoBox .mod18 #prevTop{display:none}
+.inkPhoBox .mod18 #nextTop{display:none}
+.inkPhoBox .mod18 li{float:left;}
+.inkPhoBox .mod18 .cf li{position:relative;color:#fff;}
+.inkPhoBox .mod18 .cf a{display:block;width:480px;height:320px;position:absolute;color:#fff;margin:0;}
+.inkPhoBox .mod18 .cf li span{display:block;width:688px;position:absolute;left:0;bottom:0;padding:10px 20px;line-height:22px;text-align:left;background:rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = "#60000000",endColorstr = "#60000000");}
+
+
+
+.inkPhoBox .bigImgBox{width: 480px; height: 320px;overflow:hidden; border: 1px solid #E1E1E1;}
+.inkPhoBox .mod18 .picBox{width: 488px; height: 320px; position: relative; overflow: hidden;}
+.inkPhoBox .mod18 .picBox ul{height:320px;position:absolute; left:0;}
+.inkPhoBox .mod18 .picBox li{ width:480px; height: 320px;}
+
+
+.inkPhoBox .smImgBox{ width:458px; height: 48pxpx; padding: 11px; border: 1px solid #E1E1E1; margin-top: 12px; position: relative; }
+.inkPhoBox .mod18 .listBox{ width: 458px; height: 48px; margin: 0 auto; position: relative; overflow: hidden; }
+.inkPhoBox .mod18 .listBox ul{height:48px;position:absolute; padding-left:0px;}
+.inkPhoBox .mod18 .listBox li{ width: 80px; height: 48px; cursor: pointer; position: relative;margin: 0 5px 0 5px; }
+.inkPhoBox .mod18 .listBox li i{display:none;}
+.inkPhoBox .mod18 .listBox li a{display:block;width:80px;height:48px;margin:0 5px 0 5px;}
+.inkPhoBox .mod18 .listBox li a img{width:80px;height:48px;margin:0 5px 0 5px;}
+.inkPhoBox .mod18 .listBox .on img{border:2px solid #B42222; width:80px; height:44px;margin:0 5px 0 5px;}
+.inkPhoBox .mod18 .listBox .on { background:url(../images/img_bg.jpg)/*tpa=http://www.rdfx.net/images/img_bg.jpg*/ center top no-repeat;}
+.inkPhoBox .mod18 .listBox .on i{display:block;}
+.inkPhoBox .left_top { font-family:Arial; font-size:32px; color:#fff; text-align:center; height:30px; line-height:30px; background:#333}

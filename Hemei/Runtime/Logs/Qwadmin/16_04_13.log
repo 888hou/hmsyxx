@@ -1,0 +1,2430 @@
+[ 2016-04-13T14:21:41+08:00 ] ::1 /Qwadmin
+ERR: 1146:Table 'hemei_cms.hemei_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hemei_setting`
+
+[ 2016-04-13T14:23:19+08:00 ] ::1 /Qwadmin/index/localhost
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Index/localhost' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+ERR: 非法操作:localhost
+
+[ 2016-04-13T14:24:34+08:00 ] ::1 /Qwadmin/Link/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0090s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Link/add' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:24:35+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=88&Height=31&BackCall=logo&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:24:42+08:00 ] ::1 /Qwadmin/Flash/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Flash/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_flash` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_flash` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e80b8ec61b037157f825165b72d769a4.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:24:43+08:00 ] ::1 /Qwadmin/Link/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Link/add' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:24:43+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=88&Height=31&BackCall=logo&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:24:50+08:00 ] ::1 /Qwadmin/Flash/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Flash/index' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_flash` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_flash` ORDER BY o asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e80b8ec61b037157f825165b72d769a4.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:25:07+08:00 ] ::1 /Qwadmin/Update/devlog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Update/devlog' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_devlog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hm_devlog` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hm_devlog` ORDER BY id DESC LIMIT 0,15   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:25:10+08:00 ] ::1 /Qwadmin/Update/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0090s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Update/update' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:25:11+08:00 ] ::1 /Qwadmin/Update/localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0070s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Update/localhost' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+ERR: 非法操作:localhost
+
+[ 2016-04-13T14:25:12+08:00 ] ::1 /Qwadmin/Database/backup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Database/backup' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW TABLE STATUS [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:25:19+08:00 ] ::1 /Qwadmin/Menu/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Menu/add' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hm_auth_rule` ORDER BY o ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6b8e1666d0891f33605501b93af17aec.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:26:54+08:00 ] ::1 /Qwadmin/Menu/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Menu/update' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: INSERT INTO `hm_auth_rule` (`pid`,`title`,`name`,`icon`,`islink`,`status`,`o`,`tips`) VALUES ('37','导航管理','Nav/index','','1','1','0','管理首页栏目导航对应模块ID和轮播图片文章地址') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_log` [ RunTime:0.0060s ]
+SQL: INSERT INTO `hm_log` (`name`,`t`,`ip`,`log`) VALUES ('admin','1460528814','::1','新增菜单，名称：导航管理') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:26:56+08:00 ] ::1 /Qwadmin/Menu/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Menu/add' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hm_auth_rule` ORDER BY o ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6b8e1666d0891f33605501b93af17aec.php 第 357 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-13T14:26:59+08:00 ] ::1 /Qwadmin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Nav
+
+[ 2016-04-13T14:27:07+08:00 ] ::1 /Qwadmin/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0090s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Menu/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hm_auth_rule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `hm_auth_rule` ORDER BY o asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\dc5728cb1422727535437d60ae249172.php 第 407 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:27:31+08:00 ] ::1 /Qwadmin/Category/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Category/index' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_category` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`pid`,`name`,`o` FROM `hm_category` ORDER BY o asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:27:33+08:00 ] ::1 /Qwadmin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Category/add' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`name` FROM `hm_category` ORDER BY o asc  [ RunTime:0.0000s ]
+
+[ 2016-04-13T14:28:32+08:00 ] ::1 /Qwadmin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Category/add' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_category` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`pid`,`name` FROM `hm_category` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:28:56+08:00 ] ::1 /Qwadmin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Category/add' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`name` FROM `hm_category` ORDER BY o asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:29:01+08:00 ] ::1 /Qwadmin/Category/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Category/add' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_category` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`pid`,`name` FROM `hm_category` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:30:04+08:00 ] ::1 /Qwadmin/Category/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0090s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Category/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`name`,`o` FROM `hm_category` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:30:09+08:00 ] ::1 /Qwadmin/Link/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0090s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Link/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_links` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_links` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e5f0d7f791b4ee74d79ea26ed01060f3.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-13T14:30:13+08:00 ] ::1 /Qwadmin/Link/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0070s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Link/add' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:30:13+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=88&Height=31&BackCall=logo&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:30:14+08:00 ] ::1 /Qwadmin/Link/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0070s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Link/index' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_links` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_links` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e5f0d7f791b4ee74d79ea26ed01060f3.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:30:25+08:00 ] ::1 /Qwadmin/Link/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Link/add' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:30:25+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=88&Height=31&BackCall=logo&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:30:44+08:00 ] ::1 /Qwadmin/Flash/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Flash/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_flash` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_flash` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e80b8ec61b037157f825165b72d769a4.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:30:47+08:00 ] ::1 /Qwadmin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Nav
+
+[ 2016-04-13T14:32:40+08:00 ] ::1 /Qwadmin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_nav` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e016780294e5aa6c2ecde7d43eec9ab9.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:33:11+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-04-13T14:33:11+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=400&Height=100&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:34:10+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:35:38+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:35:38+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:35:44+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0090s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:36:09+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:36:09+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:36:46+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:36:47+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-13T14:37:13+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:37:13+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-13T14:38:39+08:00 ] ::1 /Qwadmin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/index' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hm_nav` ORDER BY o asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e016780294e5aa6c2ecde7d43eec9ab9.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:39:15+08:00 ] ::1 /Qwadmin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_nav` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e016780294e5aa6c2ecde7d43eec9ab9.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:39:16+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:39:16+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:39:31+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:39:31+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:40:35+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:40:36+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:41:22+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0070s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:41:23+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:42:52+08:00 ] ::1 /Qwadmin/Nav/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/index' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_nav` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\e016780294e5aa6c2ecde7d43eec9ab9.php 第 381 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:43:01+08:00 ] ::1 /Qwadmin/Nav/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Nav/add' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-13T14:43:01+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=562&Height=374&BackCall=pic&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:43:27+08:00 ] ::1 /Qwadmin/Group/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Group/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_auth_group`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: uid D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\b47fe0d3836c6960cb7b32cc98d85567.php 第 362 行.
+NOTIC: [8] Undefined index: uid D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\b47fe0d3836c6960cb7b32cc98d85567.php 第 362 行.
+NOTIC: [8] Undefined index: uid D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\b47fe0d3836c6960cb7b32cc98d85567.php 第 362 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:43:30+08:00 ] ::1 /Qwadmin/Group/edit.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Group/index' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_auth_group` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title` FROM `hm_auth_rule` WHERE ( status=1 ) ORDER BY o asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:44:34+08:00 ] ::1 /Qwadmin/Group/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0090s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Group/update' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group` [ RunTime:0.0050s ]
+SQL: UPDATE `hm_auth_group` SET `title`='站点编辑',`status`='1',`rules`='1,24,25,26,27,29,30,48,49,50,55' WHERE ( id=3 ) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `hm_log` (`name`,`t`,`ip`,`log`) VALUES ('admin','1460529874','::1','编辑用户组，ID：3，组名：站点编辑') [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-13T14:44:35+08:00 ] ::1 /Qwadmin/Group/edit.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0070s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Group/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_auth_group` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title` FROM `hm_auth_rule` WHERE ( status=1 ) ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+NOTIC: [8] Undefined index: children D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\8411464684666c2407af12b8bdb32dfb.php 第 401 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:44:41+08:00 ] ::1 /Qwadmin/Member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Member/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hm_member` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT hm_member.*,hm_auth_group.id as gid,hm_auth_group.title FROM `hm_member` INNER JOIN hm_auth_group_access ON hm_member.uid = hm_auth_group_access.uid INNER JOIN hm_auth_group ON hm_auth_group.id = hm_auth_group_access.group_id  ORDER BY hm_member.uid asc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group` [ RunTime:0.0090s ]
+SQL: SELECT `id`,`title` FROM `hm_auth_group`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-13T14:44:42+08:00 ] ::1 /Qwadmin/Member/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Member/add' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title` FROM `hm_auth_group`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 366 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 366 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 366 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 366 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 391 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 431 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 443 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 455 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-13T14:44:42+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=100&Height=100&BackCall=head&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:01+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0090s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:07+08:00 ] ::1 /Qwadmin/Member/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Member/update' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hm_member` WHERE ( user='bianji}' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `hm_member` (`password`,`head`,`sex`,`birthday`,`phone`,`qq`,`email`,`t`,`user`) VALUES ('0fa5933c7d220e1334ba99d6f751074c','/Public/attached/201604/1460529901.png','0','1460563200','','','','1460529907','bianji') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0040s ]
+SQL: INSERT INTO `hm_auth_group_access` (`group_id`,`uid`) VALUES ('3','3') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `hm_log` (`name`,`t`,`ip`,`log`) VALUES ('admin','1460529907','::1','新增会员，会员UID：3') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-13T14:45:08+08:00 ] ::1 /Qwadmin/Member/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Member/add' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title` FROM `hm_auth_group`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 366 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 366 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 366 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 366 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 391 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 431 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 443 行.
+NOTIC: [8] Undefined variable: member D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\6336e68af3fb85862617f51c2a2f28db.php 第 455 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:45:09+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=100&Height=100&BackCall=head&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:10+08:00 ] ::1 /Qwadmin/logout/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=1 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Logout/index' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1   ) ORDER BY o ASC  [ RunTime:0.0010s ]
+
+[ 2016-04-13T14:45:10+08:00 ] ::1 /Qwadmin/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:10+08:00 ] ::1 /Qwadmin/login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:17+08:00 ] ::1 /Qwadmin/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:20+08:00 ] ::1 /Qwadmin/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:45:20+08:00 ] ::1 /Qwadmin/login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-13T14:45:27+08:00 ] ::1 /Qwadmin/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0070s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0060s ]
+SQL: SELECT `uid`,`user` FROM `hm_member` WHERE `user` = 'bianji' AND `password` = '0fa5933c7d220e1334ba99d6f751074c' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_log` [ RunTime:0.0050s ]
+SQL: INSERT INTO `hm_log` (`name`,`t`,`ip`,`log`) VALUES ('bianji','1460529927','::1','登录成功。') [ RunTime:0.0010s ]
+
+[ 2016-04-13T14:45:27+08:00 ] ::1 /Qwadmin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0080s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM hm_auth_group_access a INNER JOIN hm_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `hm_auth_rule` WHERE `id` IN ('1','24','25','26','27','29','30','48','49','50','55') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Index/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1 AND id in (1,24,25,26,27,29,30,48,49,50,55)  ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: select VERSION() as mysql [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_log` [ RunTime:0.0040s ]
+SQL: DELETE FROM `hm_log` WHERE ( t < 1455345927 ) [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hm_log` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `hm_log` ORDER BY id desc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:28+08:00 ] ::1 /Qwadmin/index/localhost
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0070s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=3 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM hm_auth_group_access a INNER JOIN hm_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `hm_auth_rule` WHERE `id` IN ('1','24','25','26','27','29','30','48','49','50','55') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+
+[ 2016-04-13T14:45:30+08:00 ] ::1 /Qwadmin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=3 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM hm_auth_group_access a INNER JOIN hm_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `hm_auth_rule` WHERE `id` IN ('1','24','25','26','27','29','30','48','49','50','55') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Article/index' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1 AND id in (1,24,25,26,27,29,30,48,49,50,55)  ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hm_article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT hm_article.*,hm_category.name FROM `hm_article` INNER JOIN hm_category ON hm_category.id = hm_article.sid  ORDER BY hm_article.aid desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-13T14:45:31+08:00 ] ::1 /Qwadmin/Article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM hm_auth_group_access a INNER JOIN hm_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `hm_auth_rule` WHERE `id` IN ('1','24','25','26','27','29','30','48','49','50','55') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Article/add' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1 AND id in (1,24,25,26,27,29,30,48,49,50,55)  ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_category` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`pid`,`name` FROM `hm_category` ORDER BY o asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: article D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\3dd7013d0c822c5a106196ec07a91304.php 第 350 行.
+NOTIC: [8] Undefined variable: article D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\3dd7013d0c822c5a106196ec07a91304.php 第 369 行.
+NOTIC: [8] Undefined variable: article D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\3dd7013d0c822c5a106196ec07a91304.php 第 381 行.
+NOTIC: [8] Undefined variable: article D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\3dd7013d0c822c5a106196ec07a91304.php 第 393 行.
+NOTIC: [8] Undefined variable: article D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\3dd7013d0c822c5a106196ec07a91304.php 第 404 行.
+NOTIC: [8] Undefined variable: article D:\WebRoot\hmsyxx\Hemei\Runtime\Cache\Qwadmin\3dd7013d0c822c5a106196ec07a91304.php 第 416 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:32+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=100&Height=100&BackCall=thumbnail&Img=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM hm_auth_group_access a INNER JOIN hm_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `hm_auth_rule` WHERE `id` IN ('1','24','25','26','27','29','30','48','49','50','55') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1 AND id in (1,24,25,26,27,29,30,48,49,50,55)  ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:37+08:00 ] ::1 /Qwadmin/Personal/profile.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=3 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0040s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM hm_auth_group_access a INNER JOIN hm_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `hm_auth_rule` WHERE `id` IN ('1','24','25','26','27','29','30','48','49','50','55') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Personal/profile' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1 AND id in (1,24,25,26,27,29,30,48,49,50,55)  ) ORDER BY o ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE ( uid=3 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:37+08:00 ] ::1 /Qwadmin/Upload/uploadpic.html?Width=100&Height=100&BackCall=head&Img=/Public/attached/201604/1460529901.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0010s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=3 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM hm_auth_group_access a INNER JOIN hm_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `condition`,`name` FROM `hm_auth_rule` WHERE `id` IN ('1','24','25','26','27','29','30','48','49','50','55') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Upload/uploadpic' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 0 D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\ComController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1 AND id in (1,24,25,26,27,29,30,48,49,50,55)  ) ORDER BY o ASC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: img D:\WebRoot\hmsyxx\Hemei\Qwadmin\Controller\UploadController.class.php 第 60 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:38+08:00 ] ::1 /Qwadmin/Logout/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+SQL: SELECT * FROM hm_auth_group g left join hm_auth_group_access a on g.id=a.group_id where a.uid=3 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_group_access` [ RunTime:0.0050s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM hm_auth_group_access a INNER JOIN hm_auth_group g on a.group_id=g.id  WHERE ( a.uid='3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `condition`,`name` FROM `hm_auth_rule` WHERE `id` IN ('1','24','25','26','27','29','30','48','49','50','55') AND `type` = 1 AND `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_member` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `hm_member` WHERE `uid` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT s.id,s.title,s.name,s.tips,s.pid,p.pid as ppid,p.title as ptitle FROM hm_auth_rule s left join hm_auth_rule p on p.id=s.pid where s.name='Logout/index' [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `hm_auth_rule` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`title`,`pid`,`name`,`icon` FROM `hm_auth_rule` WHERE ( islink=1 AND id in (1,24,25,26,27,29,30,48,49,50,55)  ) ORDER BY o ASC  [ RunTime:0.0010s ]
+
+[ 2016-04-13T14:45:39+08:00 ] ::1 /Qwadmin/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0060s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-13T14:45:39+08:00 ] ::1 /Qwadmin/login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hm_setting` [ RunTime:0.0050s ]
+SQL: SELECT `k`,`v` FROM `hm_setting`  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,4 @@
+[ 2016-04-07T13:53:17+08:00 ] ::1 /
+ERR: 1146:Table 'hemei_cms.hemei_sets' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hemei_sets`
+

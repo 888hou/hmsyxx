@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- 引入Title -->
+    <include file="Public:title" />
+    <!-- 按钮 -->
+    <link rel=stylesheet type=text/css href="__CSS__/lrtk.css">
+
+    <!-- 左侧栏 -->
+    <script type=text/javascript src="__JS__/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="__JS__/slide.js"></script>
+
+
+    <link rel=stylesheet type=text/css href="__CSS__/photo.css" tppabs="http://www.rdfx.net/css/photo.css">
+    <script src="__JS__/jqueryPhoto.js" tppabs="http://www.rdfx.net/js/jqueryPhoto.js" type="text/javascript"></script>
+
+</head>
+<body>
+<!-- head -->
+<include file="Public:header" />
+<!-- head !!-->
+
+<div class="indexBg">
+    <!-- 广告 -->
+    <include file="Public:ad" />
+    <!-- 广告 -->
+    <!-- nav -->
+    <include file="Public:nav" />
+    <!-- nav -->
+    <!-- 公告栏 -->
+
+    <!-- 公告栏 -->
+
+    <!-- center 首页内容 -->
+    <div class="mian">
+        <div class="mian_left" id="left_data" style="position: relative; top: 0px;">
+            <include file="Public:articleleft" />
+        </div>
+        <div class="mian_right">
+            <div class="radius_right_top"></div>
+            <div class="mian_cont_right">
+                <include file="Public:articleright" />
+
+                <div class="mian_right_text">
+				<if condition="($showRight eq 'list')">
+					<include file="Article:articlelist" />
+				<elseif condition="$showRight eq 'news'"/>
+					<include file="Article:news" />
+				<else />
+					<include file="Article:articlelist" />
+				</if>
+				</div>
+            </div>
+            <div class="radius_right_bottom"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!-- center 首页内容!!-->
+    <!-- 友情链接 -->
+    <include file="Public:links" />
+    <!-- 友情链接 -->
+</div>
+
+<!-- foot -->
+<include file="Public:footer" />
+<!-- foot !!-->
+<script type="text/javascript">
+    swfobject.registerObject("FlashID");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+<!-- banner -->
+<div id="banner">
+    <div class="banner">
+        <ul id="header_banner">
+            <volist name="public_nav" id="vo">
+                <li>
+                    <a href="{$vo['uri']}" title="{$vo['name']}">
+                        <img title="{$vo['title']}" src="{$vo['image']}" width="558" height="360"/>
+                    </a>
+                    <a href="{:U('/Home/Article/index/nav/'.$vo['id'])}" title="{$vo['name']}">
+                        <div class="li{$vo['class']}"></div>
+                    </a>
+                </li>
+            </volist>
+        </ul>
+    </div>
+</div>
+<!-- banner !!-->

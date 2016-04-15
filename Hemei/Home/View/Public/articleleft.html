@@ -1,0 +1,35 @@
+<div class="radius_top radius_{$nav_info['class']}" style="height: 14px;"></div>
+<div class="cont_list">
+    <h3 class="title_{$nav_info['class']}">{$nav_info['name']}</h3>
+    <div class="cont_ul cont_ul_{$nav_info['class']}">
+        <div class="blank" style="height:1px; overflow:hidden;"></div>
+        <volist name="category_list" id="vo">
+            <h4 class="meu_{$vo['class_id']}">
+
+                <if condition="($vo['type'] eq '0')">
+                    <a href="{:U('/Home/Article/index/cid/'.$vo['id'])}" class="{:( ($vo['id']==$category_info['id'] )?'meu_on':'')}" title="{$vo['title']}" id="category_{$vo['id']}">{$vo['name']}</a>
+                <elseif condition="($vo['type'] eq '1')"/>
+                    <a href="{$vo['uri']}" class="{:( ($vo['id']==$category_info['id'] )?'meu_on':'')}" title="{$vo['title']}" id="category_{$vo['id']}">{$vo['name']}</a>
+                <else />
+                    <a href="{:U('/Home/Article/index/cid/'.$vo['id'])}" class="{:( ($vo['id']==$category_info['id'] )?'meu_on':'')}" title="{$vo['title']}" id="category_{$vo['id']}">{$vo['name']}</a>
+                </if>
+
+            </h4>
+            <ul id="menu_c{$vo['id']}" style="{:( ( ($vo['id']==$category_info['pid'] ) || ($vo['id']==$category_info['id'] ) )?'display:block;':'display:none;')}">
+                <volist name="vo['child']" id="vo2">
+
+                    <if condition="($vo['type'] eq '0')">
+                        <li><a href="{:U('/Home/Article/index/cid/'.$vo2['id'])}" class="{:( ($vo2['id']==$category_info['id'] )?'meu_on':'')}" title="{$vo['title']}" id="category_{$vo2['id']}" >{$vo2['name']}</a></li> <!--  style="color:#F00;" -->
+                    <elseif condition="($vo['type'] eq '1')"/>
+                        <li><a href="{$vo2['uri']}" class="{:( ($vo2['id']==$category_info['id'] )?'meu_on':'')}" title="{$vo['title']}" id="category_{$vo2['id']}" >{$vo2['name']}</a></li> <!--  style="color:#F00;" -->
+                    <else />
+                        <li><a href="{:U('/Home/Article/index/cid/'.$vo2['id'])}" class="{:( ($vo2['id']==$category_info['id'] )?'meu_on':'')}" title="{$vo['title']}" id="category_{$vo2['id']}" >{$vo2['name']}</a></li> <!--  style="color:#F00;" -->
+                    </if>
+
+                </volist>
+            </ul>
+        </volist>
+    </div>
+    <div class="bott_radius bott_radius_{$nav_info['class']}"></div>
+</div>
+<div class="radius_bottom"></div>

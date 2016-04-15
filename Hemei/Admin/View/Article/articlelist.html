@@ -1,0 +1,25 @@
+<div class="mian_text new_list">
+    <ul>
+		<volist name="list" id="vo">
+			<li><span style="float:left; color:#F00;"></span>
+				<a href="{:U('/Home/Article/index/newsid/'.$vo['id'])}">
+					<!--|{$vo['id']}|-->{$vo['title']}
+				</a>
+				<span>{:date('Y-m-d',$vo['posttime'])}</span>
+			</li>
+		</volist>
+    </ul>
+    <div class="page">
+        <div id="page" style="">
+			{$page}
+            <!--共计4记录
+            <span>&nbsp;首页&nbsp;</span>
+            <span>&nbsp;上一页&nbsp;</span>
+            <span style="color:red">1</span>
+            <span>&nbsp;下一页&nbsp;</span>
+            <span>&nbsp;尾页&nbsp;</span>
+            &nbsp;&nbsp;&nbsp;页次：1/1页&nbsp;&nbsp;15条/页-->
+            <!--select onchange="window.location=this.value"><option value="?m=default.news_list&amp;classid=8&amp;cid=41&amp;id=89&amp;page=1" selected="selected">第1页</option></select --> 
+		</div>
+	</div>
+</div>

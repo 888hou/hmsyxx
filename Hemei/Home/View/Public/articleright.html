@@ -1,0 +1,13 @@
+<div class="bar_right bar_{$nav_info['class']}">
+    <div class="title_left title_left_{$nav_info['class']}"> <span>{$category_info['name']?:'暂无子栏目'}</span> </div>
+    <div class="title_right">
+        <ul>
+            <li><span>当前位置:</span></li>
+            <li><a href="{:U('/Home/Index/index')}">首页</a></li>
+            <li><span>&gt;</span></li>
+            <li><a href="{:U('/Home/Article/index/nav/'.$nav_info['id'])}">{$nav_info['name']}</a></li>
+            <li><span>&gt;</span></li>
+            <li><a href="{:U('/Home/Article/index/cid/'.$category_info['id'])}">{$category_info['name']?:'暂无子栏目'}</a></li>
+        </ul>
+    </div>
+</div>

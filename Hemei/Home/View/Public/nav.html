@@ -1,0 +1,11 @@
+<div class="nav">
+    <ul>
+        <volist name="public_nav" id="vo">
+            <li class="meu_{$vo['class']}">
+                <a href="{:U('/Home/Article/index/nav/'.$vo['id'])}" title="{$vo['title']}">
+                    <span style="display: none;">{$vo['name']}</span>
+                </a>
+            </li>
+        </volist>
+    </ul>
+</div>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- 引入Title -->
+<include file="Public:title" />
+<!-- 滚动大图 -->
+<script type="text/javascript" src="__JS__/script.js"></script>
+<script type="text/javascript" src="__JS__/index_banner.js"></script>
+<script type="text/javascript" src="__JS__/index_imgscroll.js"></script>
+<!-- 公告栏 -->
+<script type="text/javascript" src="__JS__/index_notice.js"></script>
+</head>
+<body>
+<!-- head -->
+<include file="Public:header" />
+<!-- head !!-->
+
+<div class="indexBg">
+	<!-- 广告 -->
+	<include file="Public:ad" />
+	<!-- 广告 -->
+	<!-- banner -->
+	<include file="Public:banner" />
+	<!-- banner -->
+	<!-- 公告栏 -->
+	<include file="Public:notice" />
+	<!-- 公告栏 -->
+
+	<!-- center 首页内容 -->
+	<div class="inContent">
+		<!-- 左侧部分 -->
+		<div class="inLeft">
+			<!-- 最新新闻 -->
+			<div class="news">
+			  <div class="newsBox">
+
+				<div class="newsTop">
+					<h3><a href="{:U('/Home/Article/index/cid/3')}">和美新闻</a></h3>
+					<span><a href="{:U('/Home/Article/index/cid/3')}">more</a></span>
+				</div>
+				<div class="newsImg">
+					<a href="{:U('/Home/Article/index/newsid/'.$news_top['id'])}">
+						<img src="{$news_top['image']}" width="171" height="122" />
+					</a>
+				</div>
+				<div class="newsTxt">
+				<h2>
+					{$news_top['title']|mb_strimwidth=###,0,32,'..','utf-8'}
+				</h2>
+				<p>{$news_top['info']|mb_strimwidth=###,0,57,'..','utf-8'}</p>
+				<p style=" text-align:right;"><a href="{:U('/Home/Article/index/newsid/'.$news_top['id'])}">查看详细</a></p>
+				</div>
+				<div class="newsList">
+					<ul>
+						<volist name="news_list" id="vo">
+							<li>
+								<span>{:date('Y-m-d',$vo['posttime'])}</span>
+								<a href="{:U('/Home/Article/index/newsid/'.$vo['id'])}">
+									{$vo['title']|mb_strimwidth=###,0,43,'..','utf-8'}
+								</a>
+							</li>
+						</volist>
+					</ul>
+				</div>
+			  </div>
+			</div>
+		<!-- 最新新闻 -->
+		<!-- 学校简介 -->
+		<div class="survey">
+			<!--
+			<div class="surTop"><h3><a href="{:U('/Home/Article/index/cid/2')}">学校概况</a></h3>
+				<span><a href="{:U('/Home/Article/index/cid/2')}">more</a></span></div>
+				<div class="surImg">
+					<a href="{:U('/Home/Article/index/newsid/'.$info_news['id'])}"><img src="{$info_news['image']}" width="320" /></a>
+				</div>
+				<div class="surTxt">
+					<p>
+						{$info_news['info']}
+					</p>
+					<p class="more"><a href="{:U('/Home/Article/index/newsid/'.$info_news['id'])}">查看详细</a></p>
+				</div>
+			</div>
+			-->
+			<div class="surTop"><h3><a href="{:U('/Home/Article/index/cid/2')}">学校概况</a></h3>
+				<span><a href="{:U('/Home/Article/index/cid/2')}">more</a></span></div>
+				<div class="surImg">
+					<a href="{:U('/Home/Article/index/newsid/'.$info_news['id'])}"><img src="{$info_news['image']}" width="320" height="164" /></a>
+				</div>
+				<div class="surTxt">
+					<p>
+						{$info_news['info']|mb_strimwidth=###,0,200,'..','utf-8'}
+					</p>
+					<p class="more"><a href="{:U('/Home/Article/index/newsid/'.$info_news['id'])}">查看详细</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- 左侧部分 -->
+		<!-- 学校简介 -->
+		<!-- 最右边栏 -->
+		<div class="inRight">
+		<!-- 新闻报道 -->
+			<div class="media">
+				<div class="mediaTop"><a href="{:U('/Home/Article/index/cid/4')}">媒体报道</a></div>
+				<div class="mediaList">
+					<ul>
+						<volist name="movie_list" id="vo">
+							<li><a href="{:U('/Home/Article/index/newsid/'.$vo['id'])}">{$vo['title']|mb_strimwidth=###,0,24,'..','utf-8'}</a></li>
+						</volist>
+					</ul>
+				</div>
+			</div>
+		<!-- 新闻报道 -->
+			<!-- 党建频道 -->
+			<div class="inAd">
+				<a href="javascript:alert('功能正在开发中！');">
+					<img src="__IMG__/hmdj.png" width="196" height="132"/>
+				</a>
+			</div>
+			<!-- 党建频道 -->
+		</div>
+		<!-- 最右边栏 -->
+
+	</div>
+	<!-- center 首页内容!!-->
+	<!-- 友情链接 -->
+	<include file="Public:links" />
+	<!-- 友情链接 -->
+</div>
+
+<!-- foot -->
+<include file="Public:footer" />
+<!-- foot !!-->
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+[ 2016-04-13T15:17:28+08:00 ] 127.0.0.1 /s?ie=utf-8&f=8&rsv_bp=1&ch=1&tn=25017023_5_dg&wd=www.hmsyxx.cn&oq=www.jsshmzx.cn&rsv_pq=bbd1e2aa0001a47d&rsv_t=f5aaSjZqumRC5XeweRgTu0r45rkzQKZhV059%252F8MrqZf0JF0iJ4y7cQ%252BLJfC1WUdn2CItfg&rsv_enter=1&inputT=11540&rsv_sug3=33&rsv_sug1=10&rsv_sug7=100&rsv_sug2=0&rsv_sug4=18493
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:S
+
+[ 2016-04-13T22:04:38+08:00 ] 127.0.0.1 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Robots
+
+[ 2016-04-13T22:35:26+08:00 ] 127.0.0.1 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+ERR: 无法加载模块:Robots
+

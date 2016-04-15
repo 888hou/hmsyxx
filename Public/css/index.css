@@ -1,0 +1,71 @@
+
+
+/**reset css**/
+body{margin:0; padding:0; font-family:"宋体"; font-size:14px;}
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0; list-style:none;}
+fieldset,input,button{border:0 none;}
+a{ text-decoration:none;}
+table{border-collapse:collapse;}
+textarea{resize:none; border:none; background:none;}
+img{ border-style:none; }
+input,button{ background:none;}
+
+
+
+
+
+.overall{width:100%; overflow:hidden;}
+.whole{width:1600px; position:relative; left:50%; margin-left:-800px; }
+.whole .header{width:100%; height:370px; background:url(/Public/images/top_bd_02.png)/*tpa=http://www.rdfx.net/images/top_bd_02.png*/ no-repeat; padding-top:26px;}
+.whole .header .logo{width:1200px; margin:0 auto;}
+.whole .header .logo h1{width:429px; height:90px; margin-left:40px;}
+.whole .header .logo h1 a{width:429px; height:90px; display:block;}
+.whole .header .logo h1 a img{width:429px; height:90px; display:block;}
+
+
+
+.main{width:100%; position:relative;}
+.main .mBox{width:1201px; display:table;  border-top:none; border-bottom:none;  left:50%;  margin-left:-633px; position:relative;}
+.main .flower{width:136px; height:184px; position:absolute; left:-198px; top:230px;}
+.main .flower2{width:49px; height:115px; right:-85px; top:460px; position:absolute;}
+.main .mContent{width:100%; background:url(/Public/images/m_fd_1_03.png)/*tpa=http://www.rdfx.net/images/m_fd_1_03.png*/ no-repeat 2px bottom; padding-left:31px; padding-bottom:371px; position:relative;}
+.main .mContent .mcBox{width:1165px; display:table; border:18px solid #e9e3d6; border-bottom:none; border-top:none; border-bottom:none; background:#e8c5a6; position:relative;}
+.main .mContent .mcBd{ background:#e8c5a6;}
+.main .mContent .mcTitle{ text-align:center; height:100px; padding-top:30px; font-weight:normal;}
+.main .mContent .mcCon{width:1040px; margin:0 auto; position:relative;}
+.main .mContent .mcCon table{width:1080px;}
+.main .mContent .mcCon table tr{ }
+.main .mContent .mcCon table tr td{ overflow:hidden; line-height:57px; padding-bottom:13px; padding-right:34px;}
+.main .mContent .mcCon table tr td span{ float:left; width:172px; height:57px; text-align:center; font-size:20px; color:#ffffff;  background:#a05e3a;}
+.main .mContent .mcCon table tr td input{width:304px; font-size:20px; padding-left:20px; height:53px; border:2px solid #c18c65; float:left; color:#853c14;}
+.main .mContent .mcCon table tr td select{width:328px; height:57px; border:2px solid #c18c65; color:#853c14; float:left; padding-left:20px; background:none; font-size:20px;}
+.main .mContent .mcCon .leaveWord{}
+.main .mContent .mcCon .leaveWord ul li{ margin-top:50px;}
+.main .mContent .mcCon .leaveWord ul li p{height:50px; padding-left:20px; color:#853c14; font-size:20px;}
+.main .mContent .mcCon .leaveWord ul li textarea{width:1018px; padding-left:20px; line-height:32px; padding-top:12px; height:160px; border:1px solid #c18c65; color:#853c14; font-size:20px;}
+.main .mContent .mcBottom{width:150px; text-align:center; font-size:36px; color:#ffffff;  position:absolute; bottom:-233px; left:50%; margin-left:-75px;}
+.main .mContent .mcBottom input{font-size:36px; color:#ffffff;}
+
+
+
+
+.footer{height:73px; background:url(/Public/images/f_bd_02.png)/*tpa=http://www.rdfx.net/images/f_bd_02.png*/ no-repeat; padding-top:300px; margin-top:-70px;}
+.footer p{ width:1200px; margin:0 auto; text-align:center; color:#fff; font-size:20px; color:#ffffff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
